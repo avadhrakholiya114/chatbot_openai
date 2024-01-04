@@ -8,4 +8,10 @@
     <input type="text" class="form-control" name="user_input">
     <button type="submit" class="btn btn-primary mt-3">Submit</button>
 </form>
+<br>
+{% if response %}
+ <div>
+     {{response}}
+ </div>
+{% endif %}
 {% endblock content %}
