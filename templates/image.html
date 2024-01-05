@@ -9,9 +9,13 @@
     <button type="submit" class="btn btn-primary mt-3">Submit</button>
 </form>
 <br>
-<!--{% if response %}-->
-<!-- <div>-->
-<!--     {{response}}-->
-<!-- </div>-->
-<!--{% endif %}-->
+<br>
+<a href="{% url 'chat_bot' %}" class="btn btn-warning">Create Response using prompt</a>
+{% if response %}
+ <div>
+     {{response.name}}
+     <br>
+     <img src="{{response.image.url}}" alt="{{response.name}}">
+ </div>
+{% endif %}
 {% endblock content %}

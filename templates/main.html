@@ -9,6 +9,9 @@
     <button type="submit" class="btn btn-primary mt-3">Submit</button>
 </form>
 <br>
+<br>
+<a href="{% url 'image_genrate' %}" class="btn btn-warning">Create image using prompt</a>
+<br>
 {% if response %}
  <div>
      {{response}}

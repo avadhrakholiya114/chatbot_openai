@@ -23,6 +23,5 @@ from .views import *
 urlpatterns = [
                   path("admin/", admin.site.urls),
                   path("", chat_bot, name='chat_bot'),
-                  path("", chat_bot, name='chat_bot'),
                   path('images/', include('images.urls'))
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
